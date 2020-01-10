@@ -6,7 +6,7 @@ app = Flask('app')
 
 @app.route('/')
 def index_page():
-  return render_template("index.html")
+  return render_template("chats.html")
 
 @app.route('/helth')
 def helth():
@@ -26,7 +26,7 @@ def suti_zinju():
   dati = request.json
   with open("chats.txt", "a", newline="") as f:
     f.write(dati["chats"] + "\n")
-    
+
   return ielasit_chatu 
 
 
