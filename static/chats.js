@@ -42,10 +42,8 @@ async function suutiZinju(){
 }
 
 let ievadesLauks = document.getElementById("zinja");
-if (ievadesLauks!=""){
-    ievadesLauks.addEventListener("keyup", function(event){
-        if(event.keyCode === 13){
-            suutiZinju();
-        }
-    })
-}
+ievadesLauks.addEventListener("keyup", function(event){
+    if(event.keyCode === 13){
+        suutiZinju();
+    }
+})
